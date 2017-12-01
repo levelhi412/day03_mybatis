@@ -27,14 +27,14 @@ public class OrderTest {
 	@Test
 	public void testGetOrder() {
 		SqlSession sqlSession = factory.openSession(true);
-		Order order = sqlSession.selectOne("com.atguigu.day03_mybatis.test4.OrderMapper.getOrder", 2);
+		Order order = sqlSession.selectOne("com.atguigu.day03_mybatis.test4.OrderMapper.getOrder", 1);
 		System.out.println(order);
 	}
 	
 	@Test
 	public void testGetOrder2() {
 		SqlSession sqlSession = factory.openSession(true);
-		Order order = sqlSession.selectOne("com.atguigu.day03_mybatis.test4.OrderMapper.getOrder2", 3);
+		Order order = sqlSession.selectOne("com.atguigu.day03_mybatis.test4.OrderMapper.getOrder2", 2);
 		System.out.println(order);
 	}
 }
